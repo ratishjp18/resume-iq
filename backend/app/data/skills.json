@@ -1,0 +1,124 @@
+{
+  "categories": {
+    "Programming Languages": {
+      "Python": ["python3", "python 3"],
+      "Java": [],
+      "JavaScript": ["JS", "ecmascript", "es6", "vanilla js"],
+      "TypeScript": ["TS"],
+      "Go": ["golang"],
+      "C#": ["c sharp", "csharp"],
+      "C++": ["cpp"],
+      "Rust": [],
+      "Kotlin": [],
+      "Swift": [],
+      "PHP": [],
+      "Ruby": [],
+      "Scala": [],
+      "Bash": ["shell scripting", "shell script"],
+      "SQL": ["t-sql", "pl/sql"]
+    },
+    "Frontend": {
+      "React": ["react.js", "reactjs", "react js"],
+      "Angular": ["angularjs", "angular.js"],
+      "Vue": ["vue.js", "vuejs"],
+      "Next.js": ["nextjs"],
+      "HTML": ["html5"],
+      "CSS": ["css3"],
+      "Tailwind CSS": ["tailwind", "tailwindcss"],
+      "Redux": [],
+      "Webpack": [],
+      "Vite": []
+    },
+    "Backend Frameworks": {
+      "FastAPI": ["fast api"],
+      "Django": [],
+      "Flask": [],
+      "Spring Boot": ["springboot"],
+      "Node.js": ["node", "nodejs", "node js"],
+      "Express": ["express.js", "expressjs"],
+      "ASP.NET": [".net", "dotnet", ".net core", "asp.net core"],
+      "Ruby on Rails": ["rails"],
+      "Laravel": []
+    },
+    "Databases": {
+      "PostgreSQL": ["postgres", "postgresql database", "psql"],
+      "MySQL": [],
+      "MongoDB": ["mongo"],
+      "Redis": [],
+      "SQLite": [],
+      "Elasticsearch": ["elastic search"],
+      "DynamoDB": ["dynamo db"],
+      "Oracle": ["oracle db"],
+      "SQL Server": ["mssql", "ms sql", "microsoft sql server"]
+    },
+    "Cloud Platforms": {
+      "AWS": ["amazon web services"],
+      "Azure": ["microsoft azure"],
+      "GCP": ["google cloud", "google cloud platform"]
+    },
+    "DevOps": {
+      "Docker": ["containerization", "containerisation", "docker compose"],
+      "Kubernetes": ["k8s"],
+      "Terraform": [],
+      "Ansible": [],
+      "Jenkins": [],
+      "CI/CD": ["ci cd", "cicd", "continuous integration", "continuous delivery", "continuous deployment"],
+      "GitHub Actions": [],
+      "Linux": [],
+      "Nginx": [],
+      "Prometheus": [],
+      "Grafana": []
+    },
+    "AI/ML": {
+      "Machine Learning": ["ML"],
+      "Deep Learning": [],
+      "NLP": ["natural language processing"],
+      "TensorFlow": [],
+      "PyTorch": ["Torch"],
+      "Scikit-learn": ["sklearn", "scikit learn"],
+      "Keras": [],
+      "Hugging Face": ["huggingface", "transformers library"],
+      "Computer Vision": [],
+      "LLM": ["llms", "large language models", "large language model"]
+    },
+    "Data Engineering": {
+      "Pandas": [],
+      "NumPy": [],
+      "Apache Spark": ["spark", "pyspark"],
+      "Kafka": ["apache kafka"],
+      "Airflow": ["apache airflow"],
+      "ETL": ["etl pipelines", "data pipelines", "data pipeline"],
+      "Snowflake": [],
+      "BigQuery": ["big query"],
+      "Tableau": [],
+      "Power BI": ["powerbi"]
+    },
+    "Testing": {
+      "Pytest": [],
+      "Jest": [],
+      "JUnit": [],
+      "Selenium": [],
+      "Cypress": [],
+      "Unit Testing": ["unit tests", "unit-testing"],
+      "Test Automation": ["automated testing", "automated tests"]
+    },
+    "Version Control": {
+      "Git": [],
+      "GitHub": [],
+      "GitLab": [],
+      "Bitbucket": []
+    },
+    "API Development": {
+      "REST APIs": ["rest api", "restful", "restful apis", "restful api", "REST", "rest services"],
+      "GraphQL": [],
+      "gRPC": [],
+      "Microservices": ["microservice", "micro-services"],
+      "OpenAPI": ["swagger"],
+      "WebSockets": ["websocket"]
+    },
+    "Practices": {
+      "Agile": ["scrum", "kanban"]
+    }
+  },
+  "case_sensitive": ["JS", "TS", "ML", "Go", "Express", "Swift", "Rust", "Ruby", "Oracle", "Spark", "Node", "Rails", "REST", "Torch"]
+}

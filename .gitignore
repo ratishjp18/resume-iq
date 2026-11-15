@@ -1,0 +1,41 @@
+# Secrets / environment
+.env
+.env.*
+!.env.example
+
+# Local data: databases, model caches, uploaded/temporary files
+*.db
+*.sqlite
+*.sqlite3
+backend/var/
+**/models_cache/
+.cache/
+tmp/
+uploads/
+
+# Resumes must never be committed
+*.pdf
+*.docx
+*.doc
+!docs/**/*.pdf
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
