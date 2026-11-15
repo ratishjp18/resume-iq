@@ -33,14 +33,14 @@ export default function Landing() {
         </motion.span>
         <motion.h1 {...fade(1)} className="mx-auto mt-6 max-w-3xl font-display text-4xl font-bold leading-tight text-white sm:text-6xl">
           Understand Your Resume.<br />
-          <span className="gradient-text">Discover Your Skill Gaps.</span>
+          <span className="gradient-text-animated">Discover Your Skill Gaps.</span>
         </motion.h1>
         <motion.p {...fade(2)} className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
           ResumeIQ compares your resume with a job description using NLP and sentence embeddings, shows the evidence behind
           every match, and helps you prepare for your next opportunity.
         </motion.p>
         <motion.div {...fade(3)} className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link to="/analyze" className="btn-primary px-7 py-3 text-base">Analyze My Resume <ArrowRight size={18} aria-hidden="true" /></Link>
+          <Link to="/analyze" className="btn-primary btn-shine px-7 py-3 text-base">Analyze My Resume <ArrowRight size={18} aria-hidden="true" /></Link>
           <Link to="/history" className="btn-ghost px-7 py-3 text-base">View History</Link>
         </motion.div>
       </section>
@@ -49,8 +49,8 @@ export default function Landing() {
         <h2 id="features" className="text-center font-display text-3xl font-bold text-white">Built to be useful, and honest</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURES.map((f, i) => (
-            <motion.div key={f.title} {...fade(i % 3)} className="glass p-6 transition hover:border-brand-purple/50 hover:shadow-glow">
-              <f.icon className="text-brand-cyan" aria-hidden="true" />
+            <motion.div key={f.title} {...fade(i % 3)} whileHover={{ y: -6 }} className="glass card-hover p-6">
+              <f.icon className="animate-float text-brand-cyan" style={{ animationDelay: `${i * 0.4}s` }} aria-hidden="true" />
               <h3 className="mt-4 font-semibold text-white">{f.title}</h3>
               <p className="mt-2 text-sm text-slate-400">{f.text}</p>
             </motion.div>
@@ -62,7 +62,7 @@ export default function Landing() {
         <h2 id="how" className="text-center font-display text-3xl font-bold text-white">How it works</h2>
         <ol className="mt-10 grid gap-5 md:grid-cols-3">
           {STEPS.map((s, i) => (
-            <motion.li key={s.title} {...fade(i)} className="glass relative p-6">
+            <motion.li key={s.title} {...fade(i)} whileHover={{ y: -6 }} className="glass card-hover relative p-6">
               <span className="absolute right-5 top-4 font-display text-5xl font-bold text-white/5">{i + 1}</span>
               <s.icon className="text-brand-purple" aria-hidden="true" />
               <h3 className="mt-4 font-semibold text-white">{s.title}</h3>
@@ -74,10 +74,12 @@ export default function Landing() {
 
       <section className="mx-auto max-w-6xl px-4 py-12 text-center sm:px-6" aria-labelledby="tech">
         <h2 id="tech" className="font-display text-2xl font-bold text-white">Technology highlights</h2>
-        <div className="mt-6 flex flex-wrap justify-center gap-2">
-          {TECH.map((t) => (
-            <span key={t} className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300">{t}</span>
-          ))}
+        <div className="marquee-mask mt-6 overflow-hidden">
+          <div className="flex w-max animate-marquee gap-2 hover:[animation-play-state:paused]">
+            {[...TECH, ...TECH].map((t, i) => (
+              <span key={`${t}-${i}`} aria-hidden={i >= TECH.length ? 'true' : undefined} className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300">{t}</span>
+            ))}
+          </div>
         </div>
       </section>
     </div>
