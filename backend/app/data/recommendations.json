@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "Docker": "Consider learning Docker fundamentals and containerizing a sample application.",
+    "Kubernetes": "Consider learning Kubernetes basics (pods, deployments, services) by deploying a small containerized app to a local cluster such as minikube or kind.",
+    "AWS": "Explore AWS fundamentals and practice deploying a simple application.",
+    "Azure": "Explore Azure fundamentals and practice deploying a simple application to Azure App Service.",
+    "GCP": "Explore Google Cloud fundamentals and practice deploying a simple service to Cloud Run.",
+    "Python": "Consider building a small Python project (for example a CLI tool or API) to practice core language features.",
+    "Java": "Consider building a small Java application to practice core language features and the standard library.",
+    "JavaScript": "Consider building a small JavaScript project to practice the language, the DOM and asynchronous programming.",
+    "TypeScript": "Consider converting a small JavaScript project to TypeScript to practice static typing.",
+    "React": "Consider building a small React application to practice components, state and hooks.",
+    "SQL": "Consider practicing SQL queries (joins, aggregations, indexes) against a sample database.",
+    "PostgreSQL": "Consider setting up PostgreSQL locally and designing a small relational schema with queries and indexes.",
+    "FastAPI": "Consider building a small REST API with FastAPI to practice routing, validation and dependency injection.",
+    "Django": "Consider following the official Django tutorial and building a small CRUD application.",
+    "Git": "Consider practicing Git workflows (branching, pull requests, rebasing) on a personal project.",
+    "CI/CD": "Consider setting up a CI pipeline (for example GitHub Actions) that runs tests and builds a sample project.",
+    "Terraform": "Consider learning Terraform basics by provisioning a small cloud resource as code.",
+    "REST APIs": "Consider designing and documenting a small REST API, covering resource modeling, status codes and error handling.",
+    "TensorFlow": "Consider working through an introductory TensorFlow tutorial and training a small model.",
+    "PyTorch": "Consider working through an introductory PyTorch tutorial and training a small model.",
+    "Machine Learning": "Consider completing an end-to-end machine learning project on a public dataset, including evaluation.",
+    "Pytest": "Consider adding Pytest tests (fixtures, parametrization) to an existing Python project.",
+    "Kafka": "Consider learning Kafka basics by building a small producer and consumer locally."
+  },
+  "category_templates": {
+    "Programming Languages": "Consider building a small project in {skill} to gain practical experience with the language.",
+    "Frontend": "Consider building a small front-end project using {skill} to practice the fundamentals.",
+    "Backend Frameworks": "Consider building a small service with {skill} to practice routing, data access and testing.",
+    "Databases": "Consider setting up {skill} locally and practicing schema design and queries.",
+    "Cloud Platforms": "Consider exploring {skill} fundamentals and deploying a simple application.",
+    "DevOps": "Consider learning {skill} fundamentals through a small hands-on project.",
+    "AI/ML": "Consider working through an introductory {skill} tutorial and applying it to a small project.",
+    "Data Engineering": "Consider practicing {skill} on a public dataset to learn the core concepts.",
+    "Testing": "Consider adding tests with {skill} to an existing project.",
+    "Version Control": "Consider practicing {skill} workflows on a personal project.",
+    "API Development": "Consider building and documenting a small project that uses {skill}.",
+    "Practices": "Consider reading about {skill} practices and how they are applied in teams.",
+    "General": "Consider learning more about {skill} through a small practical project."
+  }
+}
