@@ -1,6 +1,6 @@
 # REST API
 
-Base URL `http://localhost:8000`. Interactive docs: `/docs` (Swagger) and `/redoc`.
+Base URL `http://localhost:8001`. Interactive docs: `/docs` (Swagger) and `/redoc`.
 
 Errors always look like `{"error": {"code": "...", "message": "...", "details": [{"field","message"}]?}}`.
 

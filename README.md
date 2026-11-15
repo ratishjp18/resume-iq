@@ -44,15 +44,15 @@ python -m venv .venv
 pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
 cp .env.example .env              # optional
 alembic upgrade head              # creates backend/var/resumeiq.db (also run automatically on startup)
-uvicorn app.main:app --port 8000  # http://localhost:8000/docs
+uvicorn app.main:app --port 8001  # http://localhost:8001/docs
 
 # Frontend (second terminal)
 cd frontend
-cp .env.example .env              # VITE_API_URL=http://localhost:8000
+cp .env.example .env              # VITE_API_URL=http://localhost:8001
 npm install
 npm run dev                       # http://localhost:5173
 ```
-If port 8000 is busy, start the backend on another port and set `VITE_API_URL` accordingly.
+The backend defaults to port 8001 (8000 is often used by other local apps). To use another port, change `--port` and set `VITE_API_URL` to match.
 
 ## Tests
 ```bash
